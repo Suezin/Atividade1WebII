@@ -9,7 +9,7 @@ header {
     text-align: center;
     display: flex;
     flex-direction: row;
-    height:15em;
+    height: 15em;
     background: linear-gradient(135deg, #52357B, #5459AC);
 }
 
@@ -29,6 +29,7 @@ nav {
     align-items: center;
     height: 100%;
 }
+
 .menu a {
     text-decoration: none;
     color: black;
@@ -37,7 +38,7 @@ nav {
     padding: 0.1em 0.7em;
     margin: 0 0.5em;
     font-size: 1.5em;
-    
+
 }
 
 .menu a:hover {
@@ -46,7 +47,7 @@ nav {
     border-radius: 1em;
 }
 
-img {
+.logo {
     position: absolute;
     width: 14em;
     display: block;
@@ -54,29 +55,32 @@ img {
     left: 0;
     right: 0;
 }
+
 .titulo-sobre {
-    position: absolute;
-    bottom:30%;
+    position: relative;
+    margin-top: 5em;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5em;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
 }
-.home-box { 
+
+.home-box {
     position: relative;
+    display: flex;
+    align-items: center;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-width: 800px;
+    height: 20em;
+    max-width: 1500px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1em;
-    margin-top: 20em;
-    padding: 2em;
-    
+    margin-top: 5em;
+    padding: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    height: 10em;
 }
 
 .home-box h2 {
@@ -84,9 +88,81 @@ img {
     font-size: 2em;
     color: #333;
 }
+
 .home-box p {
     font-size: 1.2em;
     line-height: 1.5;
     color: #333;
-    text-align: center; 
+    text-align: center;
+}
+
+.titulo-servicos {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding:2em;
+}
+
+.servicos-box {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1em;
+    margin-top: 2em;
+    height: 60em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.servicos-box h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5em;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    border: 2px solid black;
+    border-radius: 1em;
+    height: 22em;
+    width: 30em;
+
+}
+
+.servicos-img {
+    border-radius: 1rem;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+
+}
+
+.servicos-box h3 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5em
+}
+
+.servicos-box p {
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+    text-align: justify;
+    width: 55%;
 }
